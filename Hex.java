@@ -15,7 +15,7 @@ public class Hex {
             key = Files.readString(Path.of(keyfile));
             key = key.substring(0, key.length());
             inp = Files.readString(Path.of(inpfile));
-            inp = inp.substring(0, inp.length() - 1);
+            inp = inp.substring(0, inp.length());
             if (debug) {
                 System.out.println("mode:" + mode);
                 System.out.println("key: " + key);
